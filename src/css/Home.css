@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard-Regular';
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.AppLoding{
+  background-color: #fafaf5;
+  width:100vw;
+  height:100vh;
+  z-index: -5;
+  position: relative;
+}
+
+.AppBg1{
+  width:50%;
+  height:100vh;
+  background-color: #f5ebe0;
+  position: absolute;
+  z-index: -1;
+}
+.AppBg2{
+  width:50%;
+  height:100vh;
+  background-color: #d6ccc2;
+  position: absolute;
+  z-index: -3;
+}
+.AppLoding h1{
+  color:#6c584c;
+  font-size: 64px;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.home{
+  width:100%;
+  min-width: 550px;
+}
+
+.homeNav{
+  width:100%;
+  height:50px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background-color: #d6ccc2;
+  color: #fff;
+  letter-spacing:3px;
+}
+.home .homeSlideContainer{
+  width:100%;
+  position: relative;
+}
+
+.home .homeSlideContainer .slideBox{
+  width:100%;
+  background-color: #fafaf5;
+}
+
+.recipeCard{
+  width:100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.recipeCard .recipeCardImg{
+  width:50%;
+  height:665px;
+}
+.recipeCard .recipeCardImg img {
+  width:100%;
+  height: 100%; /* 부모 요소의 높이에 맞게 이미지 크기 조정 */
+  object-fit: cover; /* 비율 유지하면서 부모 요소를 꽉 채움 */
+}
+
+.recipeCardTxt{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  /* box-sizing: border-box; */
+}
+
+.recipeCardTxt h3{
+  font-size: 24px;
+  color: #2b2b2b;
+}
+
+.recipeCardTxt button{
+  border: 0;
+  width:180px;
+  height:30px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #6c584c;
+  cursor: pointer;
+}
+
+.icon{
+  width:250px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.icon .iconC, .iconF, .iconC{
+  display: flex;
+  width:60px;
+  height:60px;
+  color: #fff;
+  justify-content: center;
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d6ccc2;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.homeTodayCook{
+  width:100%;
+}
+
+.homeTodayCook h2, .allmenu h2{
+  width:100%;
+  height:200px;
+  display: flex;
+  align-items: center;
+  padding-left:30px;
+  letter-spacing: 3px;
+  color: #6c584c;
+  font-size: 26px;
+}
+
+.todayCardContainer{
+  margin: 0 auto;
+  width:100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.todayCardContainer .todayCard{
+  width:300px;
+  height:400px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todayCardContainer .todayCard img{
+  border-radius: 10px 10px 0px 0px;
+  width:300px;
+  height:300px;
+}
+
+.todayCardContainer .todayCard .todayCardTxt{
+  width:100%;
+  height:100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todayCardTxt p:first-child{
+  color: #2b2b2b;
+}
+
+.todayCardTxt p:last-child{
+  color:#d6ccc2
+}
+
+.allmenuContainer{
+  width:100%;
+  position: relative;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.allmenuContainer > button {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 0;
+  width:200px;
+  height:50px;
+  border-radius: 10px;
+  background-color: #6c584c;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.closeBtn{
+  border: 0;
+  width:200px;
+  height:50px;
+  border-radius: 10px;
+  background-color: #6c584c;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 100px;
+}
