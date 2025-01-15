@@ -69,7 +69,6 @@
 
 .recipeCard{
   width:100%;
-
   display: flex;
   justify-content: center;
 }
@@ -120,7 +119,7 @@
   right: 50px;
 }
 
-.icon .iconC, .iconF, .iconC{
+.icon .iconC, .iconF, .iconN{
   display: flex;
   width:60px;
   height:60px;
@@ -223,4 +222,34 @@
   font-size: 16px;
   cursor: pointer;
   margin-top: 100px;
+}
+
+@media screen and (max-width:700px) {
+  .homeSlideContainer{
+    flex-direction: column;
+  }
+  .recipeCard {
+    flex-direction: column; /* 작은 화면에서 수직 정렬 */
+  }
+
+  .recipeCard .recipeCardImg, .recipeCardTxt {
+    width: 100%;
+  }
+
+  .recipeCardTxt {
+    padding: 20px;
+  }
+  .icon{
+    width:130px;
+    bottom: 20px;
+    left: 40px;
+  }
+  .icon .iconC, .iconF, .iconN{
+    width:30px;
+    height:30px;
+  }
+
+  .icon .iconC > span, .iconF > span, .iconN > span{
+    font-size: 11px;
+  }
 }

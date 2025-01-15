@@ -61,7 +61,7 @@ const Home = () => {
                 <span>{item.INFO_FAT}</span>
                 <span>Fat</span>
               </div>
-              <div className="iconC">
+              <div className="iconN">
                 <span>{item.INFO_NA}</span>
                 <span>Na</span>
               </div>
