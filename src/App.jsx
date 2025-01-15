@@ -26,6 +26,7 @@ function App({children}) {
     getDB();
   }, [])
 
+  //제발되라
 
   const [isLoading, setIsLoading] = useState(true);
   //로딩 페이지
