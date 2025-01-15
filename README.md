@@ -1,8 +1,13 @@
-# React + Vite
+# 공공데이터 API를 활용한 요리 레시피 사이트
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 요리 레시피를 한눈에 보기 쉽고 웹 / 반응형 구분 없이 편리하게 찾아볼 수 있도록 음식 레시피 공공 데이터 API를 활용한 요리책 사이트를 만들었습니다.
 
-Currently, two official plugins are available:
+- 사용한 API : 공공 데이터 포털
+- 사용한 언어 : 리액트 Vite
+- 사용한 라이브러리 : GSAP, Axios, Swiper
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 요리사이트의 핵심 내용
+- useState를 활용한 처음 진입 시 나타나는 Loding 구현
+- GSAP을 사용한 Loding 페이지 구현
+- axios를 활용한 공공 데이터 API 가지고 오기
+- Swiper를 사용한 슬라이드 구현 
